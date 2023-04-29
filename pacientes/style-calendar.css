@@ -1,0 +1,14 @@
+#calendar{
+    position: absolute;
+    width: 100%;
+}
+
+dialog{
+    margin-top: 20rem;
+    border-radius: 1rem;
+    background-color: aqua;
+    z-index: 1;
+    top: 200;
+    left: 20;
+    position: absolute;
+}
