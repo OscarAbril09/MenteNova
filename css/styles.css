@@ -33,3 +33,9 @@ section{
         border-radius: 0px;
     }
 } 
+@media (max-width: 991px){
+    .img1{
+        width: 50%;
+        align-self: center;
+    }
+}
