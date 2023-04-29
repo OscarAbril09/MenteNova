@@ -12,25 +12,19 @@ main{
     
 }
 aside{
-    width: 20%;
     height: 100vh;
     background: #195657;
     border-top-right-radius: 60px;
     border-bottom-right-radius: 60px;
 }
 section{
-    width: 80%;
-    height: calc(100vh - 100px);
+    height: 100vh;
 }
-
 .cont-info{
     /* Rectangle 24 */  
     background: rgba(255, 255, 255, 0.22);
     border-radius: 200px 30px;
 }
-
-
-
 @media (width < 768px ) {
     .info{
         display: none;
