@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(63, 173, 169, 0.5)), url(/img/fondo.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    
+}
+aside{
+    height: 100vh;
+    background: #195657;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+section{
+    height: 100vh;
+}
+.cont-info{
+    /* Rectangle 24 */  
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 200px 30px;
+}
+@media (width < 768px ) {
+    .info{
+        display: none;
+    }
+    aside{
+        border-radius: 0px;
+    }
+} 
