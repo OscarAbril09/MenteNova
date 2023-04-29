@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "treatments",
+  "info": {
+    "singularName": "treatment",
+    "pluralName": "treatments",
+    "displayName": "treatment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tre_id": {
+      "type": "uid"
+    },
+    "patient": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pacient.pacient"
+    },
+    "doctor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::doctor.doctor"
+    },
+    "tre_name_medicine": {
+      "type": "string",
+      "required": true
+    },
+    "tre_time_medicine": {
+      "type": "integer",
+      "required": true
+    },
+    "tre_description": {
+      "type": "text"
+    },
+    "tre_date_register": {
+      "type": "datetime",
+      "required": false
+    },
+    "tre_start_date": {
+      "type": "date",
+      "required": true
+    },
+    "tre_end_date": {
+      "type": "date"
+    }
+  }
+}
