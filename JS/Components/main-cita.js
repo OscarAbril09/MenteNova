@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User citas</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <!-- links bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="main.js" type="module" defer></script>
-
-</head>
-<body>
-    <main class="d-flex">
+class MainCita extends HTMLElement {
+    constructor(){
+        super();
+        this.render();
+    }
+    render(){
+        this.innerHTML=/*html*/`
+        <main class="d-flex">
         <aside class="col-12 col-md-4 col-lg-4 d-flex flex-column justify-content-center align-items-center">
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-5">
@@ -25,11 +17,11 @@
             </div>
             <div class="row">
                 <div class="col-12 d-flex justify-content-center mt-5">
-                    <a href="../sintomas/sintomas.html" class="btn btn-warning rounded-pill text-white fw-bold btn-lg w-75"
+                    <a href="../Paciente/sintomas.html" class="btn btn-warning rounded-pill text-white fw-bold btn-lg w-75"
                         role="button" aria-disabled="false">SINTOMAS</a>
                 </div>
                 <div class="col-12 d-flex justify-content-center mt-3">
-                    <a href="../medicina/medicina.html"
+                    <a href="../Paciente/medicina.html"
                         class="btn btn-warning rounded-pill text-white fw-bold btn-lg w-75" role="button"
                         aria-disabled="false">MEDICINA</a>
                 </div>
@@ -40,7 +32,7 @@
             </div>
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-12 mt-5">
-                    <a href="../index.html" class="btn btn-danger btn-lg rounded-pill fw-bold" 
+                    <a href="../Paciente/loginUsuario.html" class="btn btn-danger btn-lg rounded-pill fw-bold" 
                         role="button" aria-disabled="false">SALIR</a>
                 </div>
             </div>
@@ -56,5 +48,8 @@
             </div>
         </section>
     </main>
-</body>
-</html>
+        `
+    }
+}
+
+customElements.define("main-cita",MainCita)
