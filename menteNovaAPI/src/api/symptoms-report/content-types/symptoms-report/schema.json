@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "symptoms_reports",
+  "info": {
+    "singularName": "symptoms-report",
+    "pluralName": "symptoms-reports",
+    "displayName": "symptoms_report"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "srep_id": {
+      "type": "uid",
+      "required": true
+    },
+    "srep_symptom": {
+      "type": "json"
+    }
+  }
+}

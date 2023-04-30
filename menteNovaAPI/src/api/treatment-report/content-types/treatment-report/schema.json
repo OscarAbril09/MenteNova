@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "treatment_reports",
+  "info": {
+    "singularName": "treatment-report",
+    "pluralName": "treatment-reports",
+    "displayName": "treatment_report_medicine",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "trep_id": {
+      "type": "uid",
+      "required": true
+    },
+    "trep_date": {
+      "type": "datetime",
+      "required": true
+    },
+    "trep_success": {
+      "type": "boolean"
+    },
+    "treatment": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::treatment.treatment"
+    },
+    "patient": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pacient.pacient"
+    }
+  }
+}

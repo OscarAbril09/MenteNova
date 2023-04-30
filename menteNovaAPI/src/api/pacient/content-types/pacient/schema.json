@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pacients",
+  "info": {
+    "singularName": "pacient",
+    "pluralName": "pacients",
+    "displayName": "patient",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pat_id": {
+      "type": "uid",
+      "required": true,
+      "minLength": 5
+    },
+    "pat_name": {
+      "type": "string",
+      "required": true
+    },
+    "pat_last_name": {
+      "type": "string",
+      "required": true
+    },
+    "pat_birthday": {
+      "type": "date",
+      "required": true
+    },
+    "pat_phone": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

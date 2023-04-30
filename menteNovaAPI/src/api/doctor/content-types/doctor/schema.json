@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "doctors",
+  "info": {
+    "singularName": "doctor",
+    "pluralName": "doctors",
+    "displayName": "Doctor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "doc_name": {
+      "type": "string",
+      "required": true
+    },
+    "doc_last_name": {
+      "type": "string",
+      "required": true
+    },
+    "doc_id": {
+      "type": "uid",
+      "required": true
+    },
+    "doc_password": {
+      "type": "password",
+      "required": true
+    },
+    "doc_id_company": {
+      "type": "string",
+      "required": true
+    },
+    "doc_birthdate": {
+      "type": "date",
+      "required": true
+    }
+  }
+}
