@@ -1,5 +1,5 @@
 const tabla = document.querySelector('#tabla');
-let data =(JSON.parse(localStorage.getItem("dataPaciente")));
+let data =(JSON.parse(localStorage.getItem("dataPacient")));
 
 console.log((JSON.parse(localStorage.getItem("dataPacient"))), "sin dentrar");
 console.log(data)

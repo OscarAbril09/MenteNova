@@ -1,8 +1,8 @@
 
 
 const formulario = document.querySelector('#formu');
-let medicoRegistro=[];
-medicoRegistro= JSON.parse(localStorage.getItem("dataMedico"));
+
+medicoRegistro= JSON.parse(localStorage.getItem("dataMedic")) || [];
 formulario.addEventListener("submit", (e) => {
     const codigoEmpresa = formulario['codigoEmpresa'].value;
         const nombre = formulario['nombre'].value;
@@ -19,7 +19,7 @@ formulario.addEventListener("submit", (e) => {
                 medicoRegistro
             }))
 
-            //e.preventDefault();
+        //e.preventDefault();
 });
 
 
